@@ -1,0 +1,20 @@
+# -*- coding: utf-8 -*-
+from setuptools import setup, find_packages
+
+with open('requirements.txt') as f:
+	install_requires = f.read().strip().split('\n')
+
+# get version from __version__ variable in gc_utility/__init__.py
+from gc_utility import __version__ as version
+
+setup(
+	name='gc_utility',
+	version=version,
+	description='Custom Utilities',
+	author='Greycube',
+	author_email='admin@greycube.in',
+	packages=find_packages(),
+	zip_safe=False,
+	include_package_data=True,
+	install_requires=install_requires
+)
