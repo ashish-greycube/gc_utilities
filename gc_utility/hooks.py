@@ -34,7 +34,7 @@ app_license = "MIT"
 
 # include js in doctype views
 # doctype_js = {"doctype" : "public/js/doctype.js"}
-# doctype_list_js = {"doctype" : "public/js/doctype_list.js"}
+doctype_list_js = {"Email Queue": "public/js/email_queue_list.js"}
 # doctype_tree_js = {"doctype" : "public/js/doctype_tree.js"}
 # doctype_calendar_js = {"doctype" : "public/js/doctype_calendar.js"}
 
@@ -46,7 +46,7 @@ app_license = "MIT"
 
 # website user home page (by Role)
 # role_home_page = {
-#	"Role": "home_page"
+# 	"Role": "home_page"
 # }
 
 # Generators
@@ -96,7 +96,7 @@ app_license = "MIT"
 # 		"on_update": "method",
 # 		"on_cancel": "method",
 # 		"on_trash": "method"
-#	}
+# 	}
 # }
 
 # Scheduled Tasks
@@ -148,23 +148,20 @@ app_license = "MIT"
 # --------------------
 
 user_data_fields = [
-	{
-		"doctype": "{doctype_1}",
-		"filter_by": "{filter_by}",
-		"redact_fields": ["{field_1}", "{field_2}"],
-		"partial": 1,
-	},
-	{
-		"doctype": "{doctype_2}",
-		"filter_by": "{filter_by}",
-		"partial": 1,
-	},
-	{
-		"doctype": "{doctype_3}",
-		"strict": False,
-	},
-	{
-		"doctype": "{doctype_4}"
-	}
+    {
+        "doctype": "{doctype_1}",
+        "filter_by": "{filter_by}",
+        "redact_fields": ["{field_1}", "{field_2}"],
+        "partial": 1,
+    },
+    {
+        "doctype": "{doctype_2}",
+        "filter_by": "{filter_by}",
+        "partial": 1,
+    },
+    {
+        "doctype": "{doctype_3}",
+        "strict": False,
+    },
+    {"doctype": "{doctype_4}"},
 ]
-
